@@ -1,0 +1,36 @@
+[package]
+name = "libmic-rs"
+version = "0.1.0"
+edition = "2024"
+authors = ["Kumar Ujjawal <ujjawalpathak6@gmail.com>"]
+license = "MIT"
+description = "A simple, cross-platform Rust crate for recording audio from microphones to WAV files"
+repository = "https://github.com/kumarUjjawal/libmic-rs"
+homepage = "https://github.com/kumarUjjawal/libmic-rs"
+documentation = "https://docs.rs/libmic-rs"
+readme = "README.md"
+keywords = ["audio", "microphone", "recording", "wav", "cpal"]
+categories = ["multimedia::audio", "api-bindings"]
+exclude = [
+    "examples/*",
+    "tests/*",
+    ".github/*",
+    "*.wav",
+    "recordings/*"
+]
+
+[dependencies]
+cpal = "0.15"
+hound = "3.5"
+
+[lib]
+name = "libmic_rs"
+path = "src/lib.rs"
+
+[[example]]
+name = "record"
+path = "examples/record.rs"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
