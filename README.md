@@ -166,7 +166,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 1. Clone the repository
 2. Install Rust (if not already installed)
 3. Run tests: `cargo test`
-4. Run examples: `cargo run --example basic_recording`
+4. Run examples: `cargo run --example recording`
 
 ## License
 
